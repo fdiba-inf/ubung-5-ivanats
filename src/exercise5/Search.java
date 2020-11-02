@@ -1,8 +1,8 @@
-package exercise5;
+ package exercise5;  
+  
+ import java.util.Scanner;
 
-import java.util.Scanner;
-
-public class Search {
+  public class Search {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -20,16 +20,13 @@ public class Search {
         int number = input.nextInt();
 
         int numberIndex = -1;
-        for ( numberIndex = 0; numberIndex < numbers.length; numberIndex++) {
-          if (numbers[i] == number ){
-            numberIndex = i;
-            break; 
-
+        for(int index = 0 ; index<numbers.length; index++){
+          if(number==numbers[index]){
+            numberIndex=index;
+            break;
           }
-
-
         }
 
         System.out.println("Number index: " + numberIndex);
-    }
-}
+    } 
+  }
